@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>qt hl-modrun</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>S:/games/hl/valve.ico</normaloff>S:/games/hl/valve.ico</iconset>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>256</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="uniformItemSizes">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLaunch">
+    <property name="geometry">
+     <rect>
+      <x>276</x>
+      <y>520</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;Launch</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edUrl">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>471</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edPath">
+    <property name="geometry">
+     <rect>
+      <x>283</x>
+      <y>120</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edMap">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>120</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edDll">
+    <property name="geometry">
+     <rect>
+      <x>632</x>
+      <y>120</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUrl">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>URL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDir">
+    <property name="geometry">
+     <rect>
+      <x>281</x>
+      <y>100</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Directory</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMap">
+    <property name="geometry">
+     <rect>
+      <x>458</x>
+      <y>100</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Startmap</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDll">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>100</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Client-DLL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGoUrl">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>70</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="edName">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>511</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLastPlayed">
+    <property name="geometry">
+     <rect>
+      <x>457</x>
+      <y>152</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Last Played</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edLastPlayed">
+    <property name="geometry">
+     <rect>
+      <x>459</x>
+      <y>172</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edTimesPlayed">
+    <property name="geometry">
+     <rect>
+      <x>282</x>
+      <y>172</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTimesPlayed">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>152</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string># Played</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="edRating">
+    <property name="geometry">
+     <rect>
+      <x>628</x>
+      <y>272</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-1</number>
+    </property>
+    <property name="maximum">
+     <number>3</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblRating">
+    <property name="geometry">
+     <rect>
+      <x>628</x>
+      <y>252</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rating</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblRatingText">
+    <property name="geometry">
+     <rect>
+      <x>628</x>
+      <y>292</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbDefaultSettings">
+    <property name="geometry">
+     <rect>
+      <x>276</x>
+      <y>490</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use default settings</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edNumSaves">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>224</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTimesPlayed_2">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>204</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string># Savegames</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edNumShots">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>224</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTimesPlayed_3">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>204</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string># Screenshots</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="edNotes">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>276</y>
+      <width>337</width>
+      <height>137</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTimesPlayed_4">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>256</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Notes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPlaytime">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>152</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Minutes Played</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edPlaytime">
+    <property name="geometry">
+     <rect>
+      <x>632</x>
+      <y>172</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
